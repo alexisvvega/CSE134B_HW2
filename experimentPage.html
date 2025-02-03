@@ -1,120 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Experiment Page</title>
     <style>
-        sports-galore {
-            display: inline-block;
-            font-size: 1.5rem;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 12px;
-            border: 2px solid transparent;
-            margin: 10px;
-            text-align: center;
-            width: auto;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+      sports-galore {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 12px;
+        border: 2px solid transparent;
+        margin: 10px;
+        text-align: center;
+        width: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
 
-        /* Fall Sports */
-        sports-galore[type="fallSports"] {
-            background-color: #c14517; 
-            color: #fff;
-        }
-        sports-galore[type="fallSports"]:hover {
-            background-color: #941b05; 
-            transform: scale(1.05);
-        }
+      /* Fall Sports */
+      sports-galore[type="fallSports"] {
+        background-color: #c14517;
+        color: #fff;
+      }
+      sports-galore[type="fallSports"]:hover {
+        background-color: #941b05;
+        transform: scale(1.05);
+      }
 
-        /* Winter Sports */
-        sports-galore[type="winterSports"] {
-            background-color: #96c2ed;
-            color: #fff;
-        }
-        sports-galore[type="winterSports"]:hover {
-            background-color: #074a80; 
-            transform: scale(1.05);
-        }
+      /* Winter Sports */
+      sports-galore[type="winterSports"] {
+        background-color: #96c2ed;
+        color: #fff;
+      }
+      sports-galore[type="winterSports"]:hover {
+        background-color: #074a80;
+        transform: scale(1.05);
+      }
 
-        /* Spring Sports */
-        sports-galore[type="springSports"] {
-            background-color: #e7fc6e; 
-            color: #fff;
-        }
-        sports-galore[type="springSports"]:hover {
-            background-color: #13793f; 
-            transform: scale(1.05);
-        }
-
+      /* Spring Sports */
+      sports-galore[type="springSports"] {
+        background-color: #e7fc6e;
+        color: #fff;
+      }
+      sports-galore[type="springSports"]:hover {
+        background-color: #13793f;
+        transform: scale(1.05);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-          <h1 class="logo">
-            <a href="home.html">Alexis Vega</a>
-          </h1>
-          <nav>
-            <ul class="nav-links">
-              <li><a href="aboutMe.html">About Me</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="experimentPage.html">Experiment</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="navbar">
+        <h1 class="logo">
+          <a href="home.html">Alexis Vega</a>
+        </h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="experimentPage.html">Experiment</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <h1>Fun Styling</h1>
-        <hello-world></hello-world>
+      <h1>Fun Styling</h1>
+      <hello-world></hello-world>
 
-        <sports-galore type="fallSports">
-            Football
-            <svg width="20" height="20">
-                <circle cx="10" cy="10" r="8" stroke="orange" stroke-width="2" fill="orange" />
-            </svg>
-        </sports-galore>
-        <sports-galore type="winterSports">
-            Basketball
-            <svg width="20" height="20">
-                <circle cx="10" cy="10" r="8" stroke="blue" stroke-width="2" fill="blue" />
-            </svg>
-        </sports-galore>
-        <sports-galore type="springSports">
-            Baseball
-            <svg width="20" height="20">
-                <circle cx="10" cy="10" r="8" stroke="yellow" stroke-width="2" fill="yellow" />
-            </svg>
-        </sports-galore>
+      <sports-galore type="fallSports">
+        Football
+        <svg width="20" height="20">
+          <circle
+            cx="10"
+            cy="10"
+            r="8"
+            stroke="orange"
+            stroke-width="2"
+            fill="orange"
+          />
+        </svg>
+      </sports-galore>
+      <sports-galore type="winterSports">
+        Basketball
+        <svg width="20" height="20">
+          <circle
+            cx="10"
+            cy="10"
+            r="8"
+            stroke="blue"
+            stroke-width="2"
+            fill="blue"
+          />
+        </svg>
+      </sports-galore>
+      <sports-galore type="springSports">
+        Baseball
+        <svg width="20" height="20">
+          <circle
+            cx="10"
+            cy="10"
+            r="8"
+            stroke="yellow"
+            stroke-width="2"
+            fill="yellow"
+          />
+        </svg>
+      </sports-galore>
     </main>
     <noscript>
-        <p>
-            Your browser does not support JavaScript! <br>
-            Please make sure it's enabled to ensure that the page works as intended.
-        </p>
+      <p>
+        Your browser does not support JavaScript! <br />
+        Please make sure it's enabled to ensure that the page works as intended.
+      </p>
     </noscript>
 
     <template id="my-template">
-        <p>This is content inside the template tag!</p>
+      <p>This is content inside the template tag!</p>
     </template>
 
-    <canvas id="myCanvas" width="300" height="150" ></canvas>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
 
     <script>
-        class HelloWorld extends HTMLElement {
-            connectedCallback(){
-                console.log("Hello world!");
-            }
+      class HelloWorld extends HTMLElement {
+        connectedCallback() {
+          console.log("Hello world!");
         }
-        customElements.define('hello-world', HelloWorld);
+      }
+      customElements.define("hello-world", HelloWorld);
 
-        const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext("2d");
-        ctx.fillStyle = "blue";
-        ctx.fillRect(50, 50, 200, 100); 
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 50, 200, 100);
     </script>
-</body>
+  </body>
 </html>
