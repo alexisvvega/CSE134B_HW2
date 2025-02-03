@@ -2,6 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my experimental page where I experiment with different HTML5 features.">
+    <meta name="keywords" content="HTML5, style, script, canvas, template, mathML, Einstein">
+    <meta property="og:title" content="Experimenting HTML5">
+    <meta property="og:description" content="This page explores many HTML features including mathML">
+    <meta property="og:image" content="https://pterneas.com/wp-content/uploads/2011/06/html5-overview-featured.jpg">
+    <meta property="og:url" content="https://cse134b-hw2.netlify.app/">
+
     <title>Experiment Page</title>
     <style>
       sports-galore {
@@ -136,5 +144,25 @@
       ctx.fillStyle = "blue";
       ctx.fillRect(50, 50, 200, 100);
     </script>
+
+    <!--Extra Credit Portion-->
+    <p>Einstein's famous formula:
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>E</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <msup>
+                    <mi>c</mi>
+                    <mn>2</mn>
+                </msup>
+        </math>
+    </p>
+    <h4>Despite being in the HTML specification since a long time, developers 
+        could not make use of it until recently. Explain why that might be the case:</h4>
+    <p> This might be the case due to the fact that there was inconsistent browser support. Many browsers offered 
+        limited or no support for MathML which would lead to inconsistent rendering of math content. For example only 
+        until recently does it support Chrome and other chromium browsers but before this Firefox was the only one to fully support MathML.
+    </p>
+
   </body>
 </html>
